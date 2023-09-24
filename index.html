@@ -48,6 +48,7 @@
           <ul class="tc _o sf yo cg ep">
             <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
             <li><a href="index.html#features" class="xl">Features</a></li>
+            
             <li class="c i" x-data="{ dropdown: false }">
               <a href="#" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
                 :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }">
@@ -63,6 +64,7 @@
               <!-- Dropdown Start -->
               <ul class="a" :class="{ 'tc': dropdown }">
                 <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
+                <li><a href="/projects/" class="xl" :class="{ 'mk': page === 'blog-grid' }">Projects</a></li>
                 <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
 
               <form action="userdata.php" method="post">
@@ -159,6 +161,7 @@
 
           <!-- Small Features Item -->
           <div class="animate_top kn to/3 tc cg oq">
+            
             <div class="tc wf xf cf ae cd rg nh">
               <img src="images/icon-02.svg" alt="Icon" />
             </div>

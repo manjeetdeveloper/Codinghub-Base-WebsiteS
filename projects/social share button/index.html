@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Social Share Button</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+  
+</head>
+<body>
+ <div class="profile">
+  <div class="content">
+    
+    <div class="btn"><span></span></div>
+  </div>
+  <div class="box"> 
+	<i class="fa fa-codepen"></i>
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-github">
+	</i><i class="fa fa-tumblr"></i>
+	<i class="fa fa-twitter"></i>
+	</div>
+</div>
+
+
+<script>
+	(function () {
+  $('.btn').click(function () {
+    $(this).toggleClass('active');
+    return $('.box').toggleClass('open');
+  });
+
+}).call(this);
+</script>
+</body>
+</html>

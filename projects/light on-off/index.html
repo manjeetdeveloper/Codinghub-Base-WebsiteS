@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lighting on/off</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+        <div class="hero">
+            <div class="navbar">
+              
+                <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+                       <div class="lamp-container">
+                <img src="https://i.postimg.cc/4NJvKgzc/lamp.png" class="lamp">
+                <img src="https://i.postimg.cc/W1y0fqxm/light.png" class="light" id="light">
+            </div>
+           
+        </div>
+
+        <script type="text/javascript">
+            
+var btn =document.getElementById("btn");
+var light =document.getElementById("light");
+function toggleBtn(){
+                btn.classList.toggle("active")
+                light.classList.toggle("on");
+}
+
+        </script>
+    </body>
+</html>

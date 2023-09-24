@@ -1,0 +1,111 @@
+    body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "El Messiri", sans-serif;
+}
+
+.container {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+.container .header {
+  margin: 0 auto;
+  text-align: center;
+}
+.container .header h1 {
+  color: #fff;
+  font-weight: 900;
+}
+.container .header p {
+  color: #fff;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .card {
+  position: relative;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+.container .card .face {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  transition: 0.5s;
+  border-radius: 12px;
+}
+.container .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.container .card:hover .face.face1 {
+  transform: translateY(0);
+  background-image: linear-gradient(to left bottom, #8c00dc, #c600ba, #e80096, #f90074, #ff0057);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.container .card .face.face1 .content {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+.container .card .face.face1 .content img {
+  max-width: 60px;
+}
+.container .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+.container .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateY(-100px);
+}
+.container .card:hover .face.face2 {
+  transform: translateY(0);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.container .card .face.face2 p {
+  margin: 0;
+  padding: 0;
+}
+.container .card .face.face2 a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+.container .card .face.face2 a:hover {
+  background: #333;
+  color: #fff;
+}
